@@ -2,6 +2,8 @@
 - name: Demo on conditions
   hosts: localhost
   connection: local
+  vars:
+    to_install: true
   tasks:
     - name: Print OS Redhat
       ansible.builtin.debug:
@@ -22,6 +24,9 @@
         msg: Number {{ number }} is even
       when: reminder.stdout == "0"
 
-
+    - name: Boolean condition
+      ansible.builtin.debug:
+        msg: "{{ to_install }} is true"
+      when: to_install
 
 

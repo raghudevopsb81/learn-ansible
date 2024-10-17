@@ -26,7 +26,7 @@
 
     - name: Boolean condition
       ansible.builtin.debug:
-        msg: "{{ to_install }} is true"
+        msg:  to_install - true"
       when: to_install
 
 

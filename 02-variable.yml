@@ -27,4 +27,21 @@
   roles:
     - sample
 
+## Precedence
+# 1. CLI
+# 2. TASKS
+# 3. Roles- vars
+# 4. Playbook - Play Vars
+# 5. Roles - defaults
+
+- name: Demo on register variables
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+    - name: Check package
+      ansible.builtin.dnf:
+        name: zlib
+        state: installed
+
 

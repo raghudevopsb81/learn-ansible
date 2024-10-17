@@ -13,3 +13,7 @@
         msg: Started Nginx
       tags:
         - service
+        - systemd
+# if a tag is not given , then irrespective of any tag value that task will run.debug
+
+

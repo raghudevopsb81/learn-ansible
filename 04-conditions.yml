@@ -16,7 +16,9 @@
     - name: Print Even Number
       ansible.builtin.debug:
         msg: Number {{ number }} is even
-      when: "{{number/2}}" == 0
+      when: reminder == 0
+      vars:
+        reminder: "{{ number / 2 }}"
 
 
 

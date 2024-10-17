@@ -4,6 +4,7 @@
   connection: local
   vars:
     to_install: true
+    # ansible booleans are true / false or yes / no , Anything is fine
   tasks:
     - name: Print OS Redhat
       ansible.builtin.debug:

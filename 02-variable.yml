@@ -49,3 +49,21 @@
       ansible.builtin.debug:
         msg: "{{ out }}"
 
+# Variable types
+# 1. Plain
+# url: example.com
+# 2. List
+# urls:
+#   - example.com
+#   - test.com
+# 3. Map
+# domain_urls:
+#   example: example.com
+#   test: test.com
+
+
+# Variable Data types
+# 1. String
+# 2. NUmber
+# 3. Booleans
+

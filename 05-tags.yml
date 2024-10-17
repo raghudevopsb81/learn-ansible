@@ -11,5 +11,5 @@
     - name: Start nginx
       ansible.builtin.debug:
         msg: Started Nginx
-      tasks:
+      tags:
         - service
